@@ -3,16 +3,10 @@ frontend:
   phases:
     build:
       commands:
-        - echo $PATH
-        - nvm install 14.21.1
-        - echo $PATH
-        - yarn version
-        - which yarn
-        - npm run build
-        - which node
-        - amplify --version
-        - which amplify
+        - ls -al
+        - ls -al static-html-page
   artifacts:
     files:
         - index.html
-    baseDirectory: src
+    # Folder from submodule
+    baseDirectory: static-html-page/src
